@@ -31,11 +31,11 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.elisoft.kache_conductor.notificaciones.SharedPrefManager;
 import com.elisoft.kache_conductor.Constants;
 import com.elisoft.kache_conductor.Menu_taxi;
-import com.elisoft.kache_conductor.R;
+import com.elisoft.valle_grande_conductor.R;
 import com.elisoft.kache_conductor.Suceso;
-import com.elisoft.kache_conductor.notificaciones.SharedPrefManager;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
@@ -458,7 +458,7 @@ public class Servicio_cargar_punto_google extends Service implements
                                     }
                                 } else   {
                                     if (ped_2.getString("id_pedido", "").equals("") == false && ped_2.getString("id_pedido", "0").equals("0") == false && ped_2.getString("estado", "").equals("1") == true) {
-                                        servicio_ubicacion_punto_sin_registrar_ultima_ubicacion(
+                                        servicio_ubicacion_punto(
                                                 id,
                                                 String.valueOf(latitud),
                                                 String.valueOf(longitud),
@@ -933,129 +933,6 @@ public class Servicio_cargar_punto_google extends Service implements
         }
     }
 
-
-    private void servicio_ubicacion_punto_sin_registrar_ultima_ubicacion(
-            String id_conductor,
-            String latitud,
-            String longitud,
-            String placa) {
-        try {
-
-            final String latitud_h;
-            final String longitud_h;
-            final String rotacion_h;
-
-            sw_subiendo = true;
-// set_ubicacion_punto  ----- cargar punto de ubicacion....
-
-            String token= SharedPrefManager.getInstance(this).getDeviceToken();
-
-            JSONObject jsonParam= new JSONObject();
-            jsonParam.put("ci", id_conductor);
-            jsonParam.put("latitud", latitud);
-            jsonParam.put("longitud", longitud);
-            jsonParam.put("placa", placa);
-            jsonParam.put("rotacion", String.valueOf(rotacion));
-            latitud_h=latitud;
-            longitud_h=longitud;
-            rotacion_h= String.valueOf(rotacion);
-
-            jsonParam.put("token", token);
-            String url=getString(R.string.servidor) + "frmTaxi.php?opcion=set_ubicacion_punto";
-
-
-            if (queue == null) {
-                queue = Volley.newRequestQueue(this);
-            }
-
-
-
-            JsonObjectRequest myRequest= new JsonObjectRequest(
-                    Request.Method.POST,
-                    url,
-                    jsonParam,
-                    new Response.Listener<JSONObject>() {
-                        @Override
-                        public void onResponse(JSONObject respuestaJSON) {
-
-
-
-                            try {
-
-                                suceso= new Suceso(respuestaJSON.getString("suceso"),respuestaJSON.getString("mensaje"));
-
-                                if (suceso.getSuceso().equals("1")) {
-                                    //final
-
-                                    Log.w("Servicio cargar punto","Se cargo la ubicacion al servidor ("+latitud_a+","+longitud_a+")");
-                                    //reconectando("ESTOY LIBRE ☺");
-
-                                    //OBTENER FECHA DE LA ULTIMA CONEXION
-                                    Date date = new Date();
-                                    DateFormat hourdateFormat = new SimpleDateFormat("HH:mm:ss dd 'de' MMMM");
-                                    fecha=hourdateFormat.format(date);
-
-                                    stateService = Constants.STATE_SERVICE.CONNECTED;
-                                    startForeground(Constants.NOTIFICATION_ID_FOREGROUND_SERVICE, prepareNotification());
-
-
-                                }
-                                else
-                                {
-                                    //final
-                                    //reconectando("ESTOY LIBRE ☻");
-                                }
-                                //final
-                                sw_subiendo=false;
-                            } catch (JSONException e) {
-
-
-                                e.printStackTrace();
-                                sw_subiendo = false;
-                            }
-
-                        }
-                    }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    error.printStackTrace();
-                    sw_subiendo = false;
-
-                    //ERROR AL CONECTAR CON EL SERVIDOR
-                    Date date = new Date();
-                    DateFormat hourdateFormat = new SimpleDateFormat("HH:mm:ss dd 'de' MMMM");
-                    fecha=hourdateFormat.format(date);
-
-                    stateService = Constants.STATE_SERVICE.NOT_CONNECTED;
-                    startForeground(Constants.NOTIFICATION_ID_FOREGROUND_SERVICE, prepareNotification());
-
-
-                }
-            }
-            ){
-                public Map<String, String> getHeaders() throws AuthFailureError {
-                    Map<String, String> parametros= new HashMap<>();
-                    parametros.put("content-type","application/json; charset=utf-8");
-                    parametros.put("Authorization","apikey 849442df8f0536d66de700a73ebca-us17");
-                    parametros.put("Accept", "application/json");
-
-                    return  parametros;
-                }
-            };
-
-
-            myRequest.setRetryPolicy(new DefaultRetryPolicy(7000,
-                    DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
-                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-
-            queue.add(myRequest);
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            sw_subiendo = false;
-        }
-    }
     private void servicio_ubicacion_punto_carrera(
             String id_conductor,
             String latitud,

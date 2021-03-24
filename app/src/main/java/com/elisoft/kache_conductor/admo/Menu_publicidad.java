@@ -10,7 +10,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.elisoft.kache_conductor.R;
+import com.elisoft.valle_grande_conductor.R;
 
 public class Menu_publicidad extends AppCompatActivity  implements View.OnClickListener {
 Button bt_generar_uno;

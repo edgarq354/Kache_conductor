@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.elisoft.kache_conductor.animacion.login_inicio.login.login.SignUpFragment">
+    tools:context=".animacion.login_inicio.login.login.SignUpFragment">
 
     <TextView
         android:layout_width="match_parent"

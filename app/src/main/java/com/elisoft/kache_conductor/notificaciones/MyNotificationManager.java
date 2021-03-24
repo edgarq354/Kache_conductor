@@ -12,7 +12,7 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.util.Log;
 
-import com.elisoft.kache_conductor.R;
+import com.elisoft.valle_grande_conductor.R;
 
 import androidx.core.app.NotificationCompat;
 

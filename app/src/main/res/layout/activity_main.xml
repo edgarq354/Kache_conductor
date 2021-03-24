@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryDark"
         android:fitsSystemWindows="true"
-        tools:context="com.elisoft.kache_conductor.animacion.login_inicio.login.InicioAnimacion">
+        tools:context=".animacion.login_inicio.login.InicioAnimacion">
 
         <com.elisoft.kache_conductor.animacion.login_inicio.login.FlexibleFrameLayout
             android:layout_width="match_parent"

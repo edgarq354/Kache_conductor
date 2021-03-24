@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import com.elisoft.kache_conductor.R;
+import com.elisoft.valle_grande_conductor.R;
 import com.squareup.picasso.Picasso;
 
 

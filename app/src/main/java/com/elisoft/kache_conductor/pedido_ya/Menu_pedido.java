@@ -36,6 +36,11 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.elisoft.kache_conductor.chat.handy.Menu_Canal;
+import com.elisoft.kache_conductor.chat.handy.Servicio_enviar_audio;
+import com.elisoft.kache_conductor.detalle_pedido_carrito.Detalle_pedido_delivery;
+import com.elisoft.kache_conductor.notificaciones.SharedPrefManager;
+import com.elisoft.kache_conductor.solicitudes.Solicitudes;
 import com.elisoft.kache_conductor.Cancelar_pedido_taxi;
 import com.elisoft.kache_conductor.Constants;
 import com.elisoft.kache_conductor.LLamar_usuario;
@@ -45,12 +50,7 @@ import com.elisoft.kache_conductor.SqLite.AdminSQLiteOpenHelper;
 import com.elisoft.kache_conductor.Suceso;
 import com.elisoft.kache_conductor.animacion.Inicio_GradientBackgroundExampleActivity;
 import com.elisoft.kache_conductor.chat.Chat;
-import com.elisoft.kache_conductor.chat.handy.Menu_Canal;
-import com.elisoft.kache_conductor.chat.handy.Servicio_enviar_audio;
-import com.elisoft.kache_conductor.detalle_pedido_carrito.Detalle_pedido_delivery;
-import com.elisoft.kache_conductor.notificaciones.SharedPrefManager;
 import com.elisoft.kache_conductor.servicio.Servicio_cargar_punto_google;
-import com.elisoft.kache_conductor.solicitudes.Solicitudes;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -107,8 +107,9 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.elisoft.kache_conductor.R;
+import com.elisoft.valle_grande_conductor.R;
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -983,7 +984,7 @@ public class Menu_pedido extends AppCompatActivity
                 startActivity(new Intent(this, Solicitudes.class));
                 break;
             case R.id.im_grabar:
-                startActivity(new Intent(this,Menu_Canal.class));
+                startActivity(new Intent(this, Menu_Canal.class));
                 break;
             case R.id.bt_chat:
                 try {

@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.elisoft.kache_conductor.R;
+import com.elisoft.valle_grande_conductor.R;
 
 import androidx.annotation.ColorRes;
 import androidx.annotation.DrawableRes;

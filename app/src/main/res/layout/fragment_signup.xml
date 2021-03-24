@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.elisoft.kache_conductor.animacion.login_inicio.login.login.SignUpFragment">
+    tools:context=".animacion.login_inicio.login.login.SignUpFragment">
 
     <LinearLayout
         android:layout_width="wrap_content"

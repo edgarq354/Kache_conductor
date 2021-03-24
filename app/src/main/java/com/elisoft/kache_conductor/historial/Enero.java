@@ -14,9 +14,9 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.elisoft.kache_conductor.R;
-import com.elisoft.kache_conductor.carreras.Carreras;
 import com.elisoft.kache_conductor.pedido_ya.Detalle_delivery_historial;
+import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.carreras.Carreras;
 
 import java.util.ArrayList;
 
@@ -71,7 +71,7 @@ public class Enero  extends Fragment {
             if (historial.getClase_vehiculo()==5)
             {
                 Intent ed_c;
-                ed_c = new Intent(getActivity() ,Detalle_delivery_historial.class);
+                ed_c = new Intent(getActivity() , Detalle_delivery_historial.class);
                 ed_c.putExtra("id_pedido",Integer.parseInt(historial.getId()));
                 startActivity(ed_c);
             }else {

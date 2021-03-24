@@ -16,10 +16,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.elisoft.kache_conductor.R;
 import com.elisoft.kache_conductor.animacion.utils.ShadowTransformer;
 import com.elisoft.kache_conductor.animacion.views.CircleIndicatorView;
 import com.elisoft.kache_conductor.animacion.views.FlowingGradientClass;
+import com.elisoft.valle_grande_conductor.R;
 
 import java.util.List;
 
@@ -32,7 +32,7 @@ import androidx.viewpager.widget.ViewPager;
 
 public abstract class AhoyOnboarderActivity extends AppCompatActivity implements View.OnClickListener, ViewPager.OnPageChangeListener {
 
-    private CircleIndicatorView circleIndicatorView;
+    private com.elisoft.kache_conductor.animacion.views.CircleIndicatorView circleIndicatorView;
     private ViewPager vpOnboarderPager;
     private AhoyOnboarderAdapter ahoyOnboarderAdapter;
     private TextView btnSkip;
@@ -43,7 +43,7 @@ public abstract class AhoyOnboarderActivity extends AppCompatActivity implements
     private ImageView backgroundImage;
     private View backgroundImageOverlay;
 
-    private ShadowTransformer mCardShadowTransformer;
+    private com.elisoft.kache_conductor.animacion.utils.ShadowTransformer mCardShadowTransformer;
     private Typeface typeface;
     private List<Integer> colorList;
     private boolean solidBackground = false;
@@ -291,7 +291,7 @@ public abstract class AhoyOnboarderActivity extends AppCompatActivity implements
 
     public void setGradientBackground() {
 
-        FlowingGradientClass grad = new FlowingGradientClass();
+        com.elisoft.kache_conductor.animacion.views.FlowingGradientClass grad = new com.elisoft.kache_conductor.animacion.views.FlowingGradientClass();
         grad.setBackgroundResource(R.drawable.translate)
                 .onRelativeLayout(parentLayout)
                 .setTransitionDuration(4000)
@@ -299,7 +299,7 @@ public abstract class AhoyOnboarderActivity extends AppCompatActivity implements
     }
 
     public void setGradientBackground(int drawable) {
-        FlowingGradientClass grad = new FlowingGradientClass();
+        com.elisoft.kache_conductor.animacion.views.FlowingGradientClass grad = new FlowingGradientClass();
         grad.setBackgroundResource(drawable)
                 .onRelativeLayout(parentLayout)
                 .setTransitionDuration(4000)

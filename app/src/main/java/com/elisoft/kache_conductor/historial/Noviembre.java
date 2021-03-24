@@ -14,7 +14,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.elisoft.kache_conductor.R;
+import com.elisoft.valle_grande_conductor.R;
 import com.elisoft.kache_conductor.carreras.Carreras;
 
 import java.util.ArrayList;

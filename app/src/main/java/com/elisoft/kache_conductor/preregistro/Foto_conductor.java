@@ -24,7 +24,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.elisoft.kache_conductor.R;
+import com.elisoft.valle_grande_conductor.R;
 import com.elisoft.kache_conductor.Suceso;
 
 import org.apache.http.HttpEntity;

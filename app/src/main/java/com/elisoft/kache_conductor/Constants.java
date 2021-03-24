@@ -1,5 +1,7 @@
 package com.elisoft.kache_conductor;
 
+import com.elisoft.kache_conductor.servicio.Servicio_eliminar;
+
 /**
  * Contiene las constantes de las acciones de los servicios y sus parámetros
  */
@@ -7,7 +9,7 @@ public class Constants {
 
 
     /**
-     * Constantes para {@link com.elisoft.kache_conductor.servicio.Servicio_eliminar}
+     * Constantes para {@link Servicio_eliminar}
      */
     public static final String ACTION_RUN_ISERVICE = "com.elisoft.valle_grande_conductor.action.RUN_INTENT_SERVICE";
     public static final String ACTION_PROGRESS_EXIT = "com.elisoft.valle_grande_conductor.action.PROGRESS_EXIT";

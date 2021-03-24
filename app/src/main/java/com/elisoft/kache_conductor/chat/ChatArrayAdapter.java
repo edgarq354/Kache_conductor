@@ -12,8 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.elisoft.kache_conductor.R;
 import com.elisoft.kache_conductor.SqLite.AdminSQLiteOpenHelper;
+import com.elisoft.valle_grande_conductor.R;
 import com.elisoft.kache_conductor.Suceso;
 
 

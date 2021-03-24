@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.elisoft.kache_conductor.Menu_taxi"
+    tools:context=".Menu_taxi"
     android:background="@drawable/fondo_inicio"
     >
 

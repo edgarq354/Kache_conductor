@@ -166,7 +166,7 @@ Context context;
             public void onClick(View view) {
                 try {
 
-                    Intent it_chat=new Intent(getApplicationContext(),Chat.class);
+                    Intent it_chat=new Intent(getApplicationContext(), Chat.class);
                     it_chat.putExtra("id_usuario",preferencias.getString("id_usuario",""));
                     it_chat.putExtra("titulo",preferencias.getString("nombre_usuario",""));
                     startActivity(it_chat);

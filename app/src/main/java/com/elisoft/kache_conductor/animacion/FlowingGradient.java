@@ -6,7 +6,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.elisoft.kache_conductor.R;
+import com.elisoft.valle_grande_conductor.R;
 
 
 public class FlowingGradient extends View {

@@ -13,7 +13,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.elisoft.kache_conductor.R;
+import com.elisoft.valle_grande_conductor.R;
 import com.elisoft.kache_conductor.animacion.login_inicio.login.OnButtonSwitchedListener;
 
 

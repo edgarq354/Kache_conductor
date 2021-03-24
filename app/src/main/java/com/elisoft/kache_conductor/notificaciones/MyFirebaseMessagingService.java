@@ -11,17 +11,17 @@ import android.os.Build;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.elisoft.kache_conductor.chat.handy.Menu_Canal;
+import com.elisoft.kache_conductor.chat.handy.Servicio_recibir_audio;
+import com.elisoft.kache_conductor.historial_notificacion.Notificacion;
 import com.elisoft.kache_conductor.Constants;
 import com.elisoft.kache_conductor.Menu_taxi;
 import com.elisoft.kache_conductor.Notificacion_mensaje;
 import com.elisoft.kache_conductor.Notificacion_pedido_cancelado;
-import com.elisoft.kache_conductor.R;
+import com.elisoft.valle_grande_conductor.R;
 import com.elisoft.kache_conductor.SqLite.AdminSQLiteOpenHelper;
 import com.elisoft.kache_conductor.chat.Chat;
 import com.elisoft.kache_conductor.chat.Servicio_mensaje_recibido;
-import com.elisoft.kache_conductor.chat.handy.Menu_Canal;
-import com.elisoft.kache_conductor.chat.handy.Servicio_recibir_audio;
-import com.elisoft.kache_conductor.historial_notificacion.Notificacion;
 import com.elisoft.kache_conductor.servicio.Servicio_cargar_punto_google;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
@@ -288,7 +288,7 @@ switch (tipo)
         editar1.commit();
         //se vacia los puntos guardados de todos los pedido...
         vaciar_toda_la_base_de_datos();
-        Intent usus1= new Intent(getApplicationContext(),Notificacion.class);
+        Intent usus1= new Intent(getApplicationContext(), Notificacion.class);
         mNotificationManager.notificacion_con_error_activity(title, message, usus1);
 
         cargar_notificacion(title,message,cliente,id_pedido,nombre,latitud,longitud,tipo,fecha,hora,indicacion);

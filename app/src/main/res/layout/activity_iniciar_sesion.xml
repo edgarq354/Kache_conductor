@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
-    tools:context="com.elisoft.kache_conductor.Iniciar_sesion">
+    tools:context=".Iniciar_sesion">
 
 
 

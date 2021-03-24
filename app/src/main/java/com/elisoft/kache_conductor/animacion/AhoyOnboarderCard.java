@@ -4,6 +4,9 @@ import android.graphics.drawable.Drawable;
 import androidx.annotation.ColorRes;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.StringRes;
+import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
 
 
 public class AhoyOnboarderCard {

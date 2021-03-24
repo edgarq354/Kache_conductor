@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.elisoft.kache_conductor.Notificacion_pedido_m"
+    tools:context=".Notificacion_pedido_m"
     tools:showIn="@layout/activity_notificacion_pedido_m"
     android:background="@color/colorTransparente_2">
 

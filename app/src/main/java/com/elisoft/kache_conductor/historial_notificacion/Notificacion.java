@@ -15,7 +15,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.elisoft.kache_conductor.Notificacion_pedido_m;
-import com.elisoft.kache_conductor.R;
+import com.elisoft.valle_grande_conductor.R;
 import com.elisoft.kache_conductor.SqLite.AdminSQLiteOpenHelper;
 
 import java.util.ArrayList;

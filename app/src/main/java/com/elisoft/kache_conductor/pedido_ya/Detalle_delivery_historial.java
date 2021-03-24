@@ -12,11 +12,11 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.elisoft.kache_conductor.R;
-import com.elisoft.kache_conductor.Suceso;
-import com.elisoft.kache_conductor.carreras.Carreras;
 import com.elisoft.kache_conductor.detalle_pedido_carrito.CCarrito;
 import com.elisoft.kache_conductor.detalle_pedido_carrito.Item_carrito;
+import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.Suceso;
+import com.elisoft.kache_conductor.carreras.Carreras;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;

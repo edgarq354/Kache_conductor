@@ -920,14 +920,14 @@ catch (Exception e){}
             } else {  startActivity(perfil);   }
 
         } else if (id == R.id.notificacion) {
-            startActivity(new Intent(this,Notificacion.class));
+            startActivity(new Intent(this, Notificacion.class));
         } else if (id == R.id.historial) {
-            startActivity(new Intent(this,Historial.class));
+            startActivity(new Intent(this, Historial.class));
         } else if (id == R.id.it_menu_publicidad) {
             startActivity(new Intent(this, Menu_publicidad.class));
         }else if(id== R.id.it_chat)
         {
-            Intent it_chat=new Intent(this,Chat.class);
+            Intent it_chat=new Intent(this, Chat.class);
             it_chat.putExtra("id_usuario","12");
             startActivity(it_chat);
         }
@@ -1187,7 +1187,7 @@ catch (Exception e){}
                 }
                 if (clase_v==5)
                 {
-                    Intent ed_c=new Intent(this,Detalle_pedido_delivery.class);
+                    Intent ed_c=new Intent(this, Detalle_pedido_delivery.class);
                     ed_c.putExtra("id_pedido",id_p);
                     startActivity(ed_c);
                 }else {
@@ -3115,7 +3115,7 @@ catch (Exception e){}
 
 
         if((lpedido==true||ll_carrera==true)&& clase_vehiculo==5){
-            startActivity(new Intent(this,Menu_multipedido.class));
+            startActivity(new Intent(this, Menu_multipedido.class));
         }
 
         LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0);

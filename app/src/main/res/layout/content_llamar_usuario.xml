@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.elisoft.kache_conductor.LLamar_usuario"
+    tools:context=".LLamar_usuario"
     tools:showIn="@layout/activity_llamar_usuario"
     android:orientation="vertical"
     >
