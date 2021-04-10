@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorAccent_presion">#0F0F0F</color>
-    <color name="colorPrimary">#272727</color>
+    <color name="colorPrimary">#F44336</color>
     <color name="colorPrimaryDark">#000000</color>
-    <color name="colorPrimary_light">#4D9AE4</color>
-    <color name="colorAccent">#2165a6</color>
+    <color name="colorPrimary_light">#E6CBC8</color>
+    <color name="colorPrimary_light_bajito">#f4f5f9</color>
+    <color name="colorAccent">#C3624A</color>
     <color name="colorPrimary_text">#0F0F0F</color>
     <color name="colorSecondary_text">#757575</color>
     <color name="colorIcons">#000000</color>

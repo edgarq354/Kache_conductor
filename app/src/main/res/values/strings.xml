@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GouGo Free</string>
+    <string name="app_name">Kache conductor</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
@@ -69,13 +69,13 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
     <string name="moto">MOTO TAXI-ENCARGO</string>
 
 
-    <string name="whatsapp">+59175602869</string>
-    <string name="telefono">75602869</string>
+    <string name="whatsapp">+59170955414</string>
+    <string name="telefono">70955414</string>
     <string name="version_sql">8</string>
     <string name="sonido">sonido</string>
-    <string name="nombre_sql">gougo_free</string>
-    <string name="nombre_carpeta">GouGo Free</string>
-    <string name="correo">edgarq354@gmail.com</string>
+    <string name="nombre_sql">Kache_free</string>
+    <string name="nombre_carpeta">Kache conductor</string>
+    <string name="correo">taxikache@gmail.com</string>
     <string name="direccion">Ciudad de Montero, Barrio Municipal calle # 12.</string>
     <string name="title_activity_llamar_usuario">Comunicate con el pasajero</string>
 
@@ -179,7 +179,7 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
     <string name="email">Usuario</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="login">Iniciar</string>
-    <string name="sign_up">GouGo Free</string>
+    <string name="sign_up">Kache conductor</string>
     <string name="or">OR</string>
     <string name="title_activity_principal">Principal</string>
     <string name="title_activity_solicitudes">Solicitudes</string>
