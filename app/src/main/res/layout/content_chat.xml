@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".chat.Chat"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_chat"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/ic_fondo_chat_oscuro"
+        >
+
+
+
+
+
+
+    <ListView
+        android:id="@+id/msgview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:divider="@null"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="@drawable/ic_fondo_bajo"
+        android:paddingTop="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:paddingBottom="5sp"
+         >
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bk_search"
+            android:hint="Escribir mensaje . . ."
+            android:paddingLeft="15sp"
+            android:imeOptions="actionDone" />
+        <ImageView
+            android:layout_width="52sp"
+            android:layout_height="52sp"
+            android:layout_gravity="center"
+            android:background="@drawable/cardviewboton"
+            android:src="@drawable/ic_camara"
+            android:id="@+id/im_camara"
+            />
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/cardviewboton"
+            android:src="@drawable/ic_error_conexion"
+            android:id="@+id/im_grabar"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            android:background="@drawable/cardviewboton"
+            android:src="@mipmap/ic_cerrar_sesion_white" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_informacion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_inicio"
+    android:orientation="vertical"
+    tools:context=".Informacion">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desarrollador: Ing. Edgar Elio Quiñones Quiroga."
+            android:textColor="@color/colorTextoBoton"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: edgarq354@gmail.com"
+            android:textColor="@color/colorTextoBoton"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginBottom="70sp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50sp"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:src="@drawable/ic_taxicorp_nombre_white"
+                android:layout_marginBottom="30sp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dirección"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"
+                android:textColor="@color/color_secundario"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextoBoton"
+                android:text="Av. Centenario Calle 9 esq. Dr. Gregorio Moreno (entre 3er y 4to anillo)."
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="10sp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convenio con Empresas"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"
+                android:textColor="@color/color_secundario"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextoBoton"
+                android:text="Trabajamos con: Hoteles, Supermercados, Universidades y Empresas privadas."
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="10sp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Servicio para fiestas y eventos"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"
+                android:textColor="@color/color_secundario"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextoBoton"
+                android:text="Ponemos a tu disposición nuestra flota para el transporte de invitados, familiares o lo que necesites en tu evento."
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="10sp"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Misión"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"
+                android:textColor="@color/color_secundario"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextoBoton"
+                android:text="Superar las expectativas de nuestro cliente ofreciendo un servicio de calidad y excelencia basado en la eficiencia y responsabilidad, enmarcado en el ámbito de la seguridad y confianza."
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="10sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Misión"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"
+                android:textColor="@color/color_secundario"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextoBoton"
+                android:text="Superar las expectativas de nuestro cliente ofreciendo un servicio de calidad y excelencia basado en la eficiencia y responsabilidad, enmarcado en el ámbito de la seguridad y confianza."
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingBottom="10sp"
+                />
+
+
+
+
+
+            <Button
+                android:id="@+id/pagina"
+                style="@style/submit4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="www.radiotaxilacarroza.com"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:paddingLeft="10sp"/>
+
+
+
+            <Button
+                android:id="@+id/terminos"
+                style="@style/submit4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Terminos y condiciones"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:paddingLeft="10sp"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

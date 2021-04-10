@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPedido"
+        >
+
+
+    <ImageView
+        android:layout_width="80sp"
+        android:layout_margin="5sp"
+        android:layout_height="80sp"
+        android:id="@+id/im_perfil_usuario"
+        android:src="@drawable/ic_perfil_negro"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|left"
+        android:text="NOMBRE"
+        android:textSize="15sp"
+        android:id="@+id/tv_nombre"
+        android:textColor="@color/colorTextoBoton"
+
+        />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COMUNICATE CON EL PASAJERO"
+        android:textColor="@color/colorTextoBoton"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="5sp"
+        android:background="@color/colorPedido"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Con notificaciones predeterminadas"
+        android:textColor="@color/colorPrimary_text"
+        android:gravity="left|center"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:padding="5sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_llegare_en_5"
+        android:text="Llegare en 5 minutos"
+        style="@style/submit4"
+        android:layout_margin="0sp"
+        android:paddingLeft="5sp"
+        android:gravity="left|center"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_estoy_en_camino"
+        android:text="Estoy en camino por favor no cancele"
+        style="@style/submit4"
+        android:layout_margin="0sp"
+        android:gravity="left|center"
+        android:paddingLeft="5sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_direccion_incorrecta"
+        android:text="Direccion incorrecta LLAMEME"
+        style="@style/submit4"
+        android:layout_margin="0sp"
+        android:gravity="left|center"
+        android:paddingLeft="5sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_llegue"
+        android:text="Su Taxi esta en su puerta."
+        style="@style/submit4"
+        android:layout_margin="0sp"
+        android:gravity="left|center"
+        android:paddingLeft="5sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_vocina"
+        android:text="Tocar Vocina"
+        style="@style/submit4"
+        android:layout_margin="0sp"
+        android:gravity="left|center"
+        android:paddingLeft="5sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Por otros medios"
+        android:textColor="@color/colorPrimary_text"
+        android:gravity="left"
+        android:textStyle="normal"
+        android:textSize="15sp"
+        android:padding="5sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_llamada_usuario"
+        android:text="LLAMADA"
+        style="@style/submit5"
+        android:drawableLeft="@mipmap/ic_celular"
+        android:layout_margin="0sp"
+        android:gravity="left|center"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_mensaje_usuario"
+        android:text="MENSAJE"
+        style="@style/submit5"
+        android:drawableLeft="@mipmap/ic_mensaje"
+        android:layout_margin="0sp"
+        android:gravity="left|center"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_whatsapp_usuario"
+        android:text="WHATSAPP"
+        style="@style/submit5"
+        android:drawableLeft="@mipmap/ic_whatsapp"
+        android:layout_margin="0sp"
+        android:gravity="left|center"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_ninguna"
+        android:text="NINGUNA"
+        style="@style/submit5"
+        android:layout_margin="0sp"
+        />
+</LinearLayout>
+</ScrollView>

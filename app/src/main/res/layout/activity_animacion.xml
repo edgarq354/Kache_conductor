@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_animacion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Animacion"
+    android:background="@drawable/fondo_inicio">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="1"
+        android:layout_gravity="bottom"
+        android:indeterminate="false"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:visibility="invisible"
+        android:id="@+id/cargando"
+        />
+    <!--
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_imageAssetsFolder="assets"
+        app:lottie_fileName="animation-w800-h600.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        app:lottie_enableMergePathsForKitKatAndAbove="true"
+        />
+-->
+        <ImageView
+            android:layout_width="300sp"
+            android:layout_height="90sp"
+            android:background="@drawable/ic_taxicorp_nombre_white"
+            android:layout_gravity="center"
+            />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="Version 1.0"
+        android:textColor="@color/colorTextoBoton" />
+
+
+</FrameLayout>

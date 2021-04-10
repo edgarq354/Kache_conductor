@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10sp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PERMITIR ENVIAR UBICACION EN SEGUNDO PLANO"
+            android:textColor="@color/colorPrimary_text"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="15sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Los datos de ubicación nos ayudan a mejorar nuestros servicios, como los inicios de viaje, navegación y soporte al cliente, entre otros.
+Si usas un dispositivo con Android y los Servicios de ubicación están activados, podremos recopilar los datos de tu ubicación desde que abres la app hasta que finaliza o se cancela el viaje. Esto sucederá incluso cuando la app esté abierta en segundo plano."
+            android:textColor="@color/colorPrimary_text"
+
+            />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACEPTAR LOS TERMINOS Y CONDICIONES"
+            android:id="@+id/cb_terminos_condiciones"
+            android:layout_marginBottom="15sp"
+            android:layout_marginTop="15sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACEPTAR/CONTINUAR"
+            style="@style/submit"
+            android:id="@+id/bt_aceptar_continuar"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

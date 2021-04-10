@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.elisoft.kache_conductor">
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_logo_app"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".pedido_ya.Detalle_pedido_multipedido"
+            android:label="@string/title_activity_detalle_pedido_multipedido"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".pedido_ya.Menu_multipedido"
+            android:label="@string/title_activity_menu_multipedido"
+            android:theme="@style/AppTheme.NoActionBarPedido" />
+        <activity
+            android:name=".detalle_pedido_carrito.Delivery_multipedido"
+            android:label="@string/title_activity_delivery_multipedido"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pedido_ya.Menu_pedido"
+            android:label="@string/title_activity_menu_pedido"
+            android:theme="@style/AppTheme.NoActionBarPedido" />
+
+        <service
+            android:name=".servicio.Servicio_cargar_punto_google"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".chat.Servicio_chat"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".servicio.BootUpReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="app_name" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".servicio.BootUpService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name=".solicitudes.Solicitudes"
+            android:label="@string/title_activity_solicitudes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Inicio" />
+        <activity
+            android:name=".animacion.login_inicio.login.InicioAnimacion"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".configuracion.Configuracion"
+            android:label="@string/title_activity_configuracion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".admo.Anuncio_bonificado"
+            android:label="@string/title_activity_anuncio_bonificado"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".admo.Menu_publicidad"
+            android:label="@string/title_activity_menu_publicidad"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".chat.handy.Lista_audio_canal"
+            android:label="@string/title_activity_lista_audio_canal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".chat.handy.Menu_Canal"
+            android:label="@string/title_activity_menu__canal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Menu_taxi"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Informacion"
+            android:label="Información" />
+        <activity
+            android:name=".Modificar_contrasenia"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Animacion"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".animacion.Inicio_GradientBackgroundExampleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".animacion.ImageBackgroundExampleActivity" />
+        <activity android:name=".animacion.SolidBackgroundExampleActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".Iniciar_sesion"
+            android:label="Iniciar sesión"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Pedido_perfil_usuario" />
+        <activity
+            android:name=".Pedido_perfil_taxi"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".historial_notificacion.Notificacion"
+            android:label="Notificación" />
+        <activity
+            android:name=".Cancelar_pedido_taxi"
+            android:label="Cancelar el pedido" />
+        <activity
+            android:name=".historial.Historial"
+            android:label="@string/title_activity_historial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Notificacion_pedido_cancelado"
+            android:label="@string/title_activity_notificacion_pedido_cancelado" />
+        <activity
+            android:name=".Notificacion_mensaje"
+            android:label="Notificación" />
+        <activity
+            android:name=".carreras.Carreras"
+            android:label="Carreras"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Conductor_edit"
+            android:label="@string/title_activity_conductor_edit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".perfil.Perfil_Conductor"
+            android:label="@string/title_activity_perfil__conductor"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Empresa_radio_taxi"
+            android:label="@string/title_activity_empresa_radio_taxi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Notificacion_pedido_m"
+            android:label="@string/title_activity_notificacion_pedido_m"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".video_tutorial.Menu_video"
+            android:label="Video Tutorial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".perfil.Datos_vehiculo"
+            android:label="@string/title_activity_datos_vehiculo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LLamar_usuario"
+            android:label="@string/title_activity_llamar_usuario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".chat.Chat"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Notificacion_delivery"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBarPedido" />
+        <activity
+            android:name=".detalle_pedido_carrito.Detalle_pedido_delivery"
+            android:label="@string/title_activity_detalle_pedido_delivery"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pedido_ya.Detalle_delivery_historial"
+            android:label="@string/title_activity_detalle_delivery_historial"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pedido_ya.Empresa_delivery"
+            android:label="@string/title_activity_empresa_delivery"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".preregistro.Verificar_numero"
+            android:label="@string/title_activity_verificar_numero"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".preregistro.Menu_fotos_preregistro"
+            android:label="@string/title_activity_menu_fotos_preregistro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".preregistro.Foto_vehiculo"
+            android:label="@string/title_activity_foto_vehiculo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".preregistro.Foto_rua"
+            android:label="@string/title_activity_foto_rua"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".preregistro.Foto_inspeccion_tecnica"
+            android:label="@string/title_activity_foto_inspeccion_tecnica"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".preregistro.Foto_conductor"
+            android:label="@string/title_activity_foto_conductor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".preregistro.Foto_licencia"
+            android:label="@string/title_activity_foto_licencia"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".preregistro.Foto_carnet"
+            android:label="@string/title_activity_foto_carnet"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".preregistro.Foto_soat"
+            android:label="@string/title_activity_foto_soat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".preregistro.Menu_datos_conductor"
+            android:label="@string/title_activity_menu_datos_conductor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".preregistro.Menu_datos_vehiculo"
+            android:label="@string/title_activity_menu_datos_vehiculo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".preregistro.Datos_conductor"
+            android:label="@string/title_activity_datos_conductor"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".preregistro.Datos_vehiculo_pre"
+            android:label="@string/title_activity_datos_vehiculo_pre"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/id_AdMob_aplicacion" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name=".servicio.Servicio_cargar_punto"
+            android:enabled="true"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <service
+            android:name=".servicio.Servicio_cargar_punto_volley"
+            android:enabled="true"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <service
+            android:name=".chat.handy.Servicio_enviar_audio"
+            android:enabled="true"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <service
+            android:name=".chat.handy.Servicio_recibir_audio"
+            android:enabled="true"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <service
+            android:name=".chat.Servicio_reproducir"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".chat.Chat_pedido"
+            android:label="@string/title_activity_chat"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name=".servicio.Servicio_cargar_punto_google$MyReceiver"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+
+        </receiver>
+
+        <service
+            android:name=".notificaciones.MyFirebaseInstanceIdService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".notificaciones.MyFirebaseMessagingService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".servicio.Servicio_eliminar"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <service
+            android:name=".servicio.Servicio_tarifa"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".servicio.Servicio_descargar_imagen_perfil"
+            android:enabled="true"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <service
+            android:name=".chat.Servicio_mensaje_recibido"
+            android:enabled="true"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <uses-library android:name="com.google.android.maps" />
+    </application>
+
+</manifest>

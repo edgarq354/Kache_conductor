@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "362181600864",
+    "project_id": "taxi-kache",
+    "storage_bucket": "taxi-kache.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362181600864:android:f6546c06bc2b5219398505",
+        "android_client_info": {
+          "package_name": "com.elisoft.kache"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362181600864-dljstkne5su3qcd5ci9796ndg5mbkf8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkOhtV7L024OsTLzGjlF0QAycykmtxpQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362181600864-dljstkne5su3qcd5ci9796ndg5mbkf8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362181600864:android:dc30479145fa193f398505",
+        "android_client_info": {
+          "package_name": "com.elisoft.kache_conductor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362181600864-dljstkne5su3qcd5ci9796ndg5mbkf8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkOhtV7L024OsTLzGjlF0QAycykmtxpQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362181600864-dljstkne5su3qcd5ci9796ndg5mbkf8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

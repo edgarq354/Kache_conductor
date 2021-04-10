@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Conductor_edit"
+    tools:showIn="@layout/activity_conductor_edit">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="5sp"
+            >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/Error"
+                android:textColorHint="@color/colorAccent"
+                >
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Correo"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="5sp"
+            >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/Error"
+                android:textColorHint="@color/colorAccent"
+                >
+
+                <EditText
+                    android:id="@+id/et_imei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Imei"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="5sp"
+            >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/Error"
+                android:textColorHint="@color/colorAccent"
+                >
+
+                <EditText
+                    android:id="@+id/et_nro_ham"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nro Identificación (HAM)"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="5sp"
+            >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/Error"
+                android:textColorHint="@color/colorAccent"
+                >
+
+                <EditText
+                    android:id="@+id/et_nro_transito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nro identificación (Transito)"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="5sp"
+            >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/Error"
+                android:textColorHint="@color/colorAccent"
+                >
+
+                <EditText
+                    android:id="@+id/et_nro_factura_luz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nro identificación (Luz-Agua)"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="5sp"
+            >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/Error"
+                android:textColorHint="@color/colorAccent"
+                >
+
+                <EditText
+                    android:id="@+id/et_nro_antecedente_transito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nro de antecedente (Transito)"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="5sp"
+            >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/Error"
+                android:textColorHint="@color/colorAccent"
+                >
+
+                <EditText
+                    android:id="@+id/et_nro_antecedente_felcc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Nro de antecedente (FELCC)"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp"
+            android:background="#000"
+            >
+
+        </TextView>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/alert_light_frame"
+            android:layout_marginTop="0sp"
+
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="20sp"
+                    android:paddingLeft="20sp"
+                    >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Fotografia de C.I."
+                    android:textSize="18sp"
+                    android:textColor="@color/colorAccent"
+                    />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:text="Agregar 2 imagenes de su Cedula de Identidad."
+                        />
+                </LinearLayout>
+
+            </TableRow>
+
+                     <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                         <TableRow
+
+                             android:layout_width="wrap_content"
+                             android:layout_height="match_parent"
+                             android:id="@+id/tr_ci"
+                             >
+
+                         <com.google.android.material.floatingactionbutton.FloatingActionButton
+                             android:id="@+id/im_foto_ci"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:clickable="true"
+                             app:fabSize="mini"
+                             app:srcCompat="@mipmap/ic_pluss"
+                             android:layout_marginRight="5sp"
+                             />
+                         </TableRow>
+
+                     </HorizontalScrollView>
+
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:background="@android:drawable/alert_light_frame"
+
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="20sp"
+                    android:paddingLeft="20sp"
+                    >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Fotografia de Licencia"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:text="Agregar 2 imagenes de su Licencia de Conducir"
+                    />
+            </LinearLayout>
+            </TableRow>
+
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <TableRow
+                            android:id="@+id/tr_licencia"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/im_foto_licencia"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                app:fabSize="mini"
+                                app:srcCompat="@mipmap/ic_pluss"
+                                android:layout_marginRight="5sp"
+                                />
+                    </TableRow>
+                </HorizontalScrollView>
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/alert_light_frame"
+            android:layout_marginTop="0sp"
+
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="20sp"
+                    android:paddingLeft="20sp"
+                    >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Fotografia de Identificación (HAM)"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorAccent"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:text="Agregar todas las imagenes de su tarjeta de identificacion del Honorable Alcalde Municipal"
+                    />
+            </LinearLayout>
+            </TableRow>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tr_ham" >
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/im_foto_ham"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            app:fabSize="mini"
+                            app:srcCompat="@mipmap/ic_pluss"
+                            android:layout_marginRight="5sp"
+                            />
+                        </TableRow>
+                </HorizontalScrollView>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/alert_light_frame"
+            android:layout_marginTop="0sp"
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Fotografia de Identificación de Transito"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorAccent"
+                    />
+            </TableRow>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tr_identificacion_transito" >
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/im_foto_identificacion_transito"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        app:fabSize="mini"
+                        app:srcCompat="@mipmap/ic_pluss"
+                        android:layout_marginRight="5sp"
+                        />
+                    </TableRow>
+                </HorizontalScrollView>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/alert_light_frame"
+            android:layout_marginTop="0sp"
+
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Fotografia de Factura de Agua o Luz"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorAccent"
+                    />
+            </TableRow>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tr_factura_luz" >
+
+                              <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/im_foto_factura_luz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            app:fabSize="mini"
+                            app:srcCompat="@mipmap/ic_pluss"
+                            android:layout_marginRight="5sp"
+                            />
+                     </TableRow>
+                </HorizontalScrollView>
+
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/alert_light_frame"
+            android:layout_marginTop="0sp"
+
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Fotografia de Antecedentes de Transito"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorAccent"
+                    />
+            </TableRow>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                       <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tr_antecedente_transito" >
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/im_foto_antecedente_transito"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                app:fabSize="mini"
+                                app:srcCompat="@mipmap/ic_pluss"
+                                android:layout_marginRight="5sp"
+                                />
+                     </TableRow>
+                </HorizontalScrollView>
+
+        </TableLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/alert_light_frame"
+        android:layout_marginTop="0sp"
+
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Fotografia de Antecedentes de FELCC"
+                android:textSize="18sp"
+                android:textColor="@color/colorAccent"
+                />
+        </TableRow>
+           <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tr_antecedente_felcc" >
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/im_foto_antecedente_felcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    app:fabSize="mini"
+                    app:srcCompat="@mipmap/ic_pluss"
+                    android:layout_marginRight="5sp"
+                    />
+            </TableRow>
+            </HorizontalScrollView>
+    </TableLayout>
+
+  </LinearLayout>
+
+</ScrollView>

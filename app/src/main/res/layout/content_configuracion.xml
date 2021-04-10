@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".configuracion.Configuracion"
+    android:orientation="vertical"
+    android:padding="5sp"
+    tools:showIn="@layout/activity_configuracion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15sp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="El estilo de mapa diurno se activara dentro del horario establecido y fuera del este horario sera automaticamente el mapa con estilo nocturno"
+            android:textSize="15sp"
+            android:textColor="@color/colorIcons"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:paddingLeft="15sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora de inicio:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorIcons"
+            />
+        <Spinner
+            android:id="@+id/sp_hora_inicial"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:entries="@array/lista_hora"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="#979797"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+
+        android:paddingLeft="15sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora final:"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorIcons"
+            />
+        <Spinner
+            android:id="@+id/sp_hora_final"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:entries="@array/lista_hora"
+            android:textAlignment="center"
+android:popupBackground="#fff"
+
+            android:gravity="center_horizontal" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:padding="10sp"
+        style="@style/submit"
+        android:id="@+id/bt_guardar"
+        android:layout_marginTop="25sp"
+        />
+</LinearLayout>

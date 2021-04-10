@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".preregistro.Imagen_preregistro_vehiculo"
+    tools:showIn="@layout/activity_imagenes_preregistro">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Al subir todas las fotos habras completado tu registro."
+                android:textSize="20sp"
+                android:layout_margin="15sp"
+                android:gravity="center"
+                android:textColor="@color/colorAccent_presion"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:drawable/alert_light_frame"
+                android:layout_marginTop="10sp"
+                android:padding="15sp"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Foto de perfil"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:background="@drawable/ic_camara"
+                    android:id="@+id/im_perfil_conductor"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Agregar una imagen de perfil del conductor"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:drawable/alert_light_frame"
+                android:layout_marginTop="10sp"
+                android:padding="15sp"
+                >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Foto del Vehículo(Delantero)"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:background="@drawable/ic_camara"
+                    android:id="@+id/im_imagen_1"
+
+                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:text="Agregar una imagen de la parte delantera del Vehículo"
+                        />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:drawable/alert_light_frame"
+                android:layout_marginTop="10sp"
+                android:padding="15sp"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Foto del Vehículo(Detras)"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200sp"
+                        android:background="@drawable/ic_camara"
+                        android:id="@+id/im_imagen_2"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:text="Agregar una imagen de la parte trasera del Vehículo"
+                        />
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:drawable/alert_light_frame"
+                android:layout_marginTop="10sp"
+                android:padding="15sp"
+                >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Foto del Vehículo(Interior Delante)"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:background="@drawable/ic_camara"
+                    android:id="@+id/im_imagen_3"
+                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:text="Agregar una imagen de la parte interior delantera del Vehículo"
+                        />
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:drawable/alert_light_frame"
+                android:layout_marginTop="10sp"
+                android:padding="15sp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Foto del Vehículo(Interior Delante)"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:background="@drawable/ic_camara"
+                    android:id="@+id/im_imagen_4"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:text="Agregar una imagen de la parte interior delantera del Vehículo"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gracias por realizar tu Pre-registro como un conductor de Radio Movil Clasico."
+                android:textSize="20sp"
+                android:layout_margin="15sp"
+                android:gravity="center"
+                android:textColor="@color/colorAccent_presion"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="#000"
+    tools:context=".chat.handy.Menu_Canal"
+    tools:showIn="@layout/activity_menu__canal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="NUEVO HANDY - ELISOFT "
+        android:layout_margin="10sp"
+        android:id="@+id/tv_audio"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="conectar"
+        android:layout_gravity="top|right"
+        android:id="@+id/bt_conectar"
+        style="@style/submit3"
+        />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/ic_error_conexion"
+        android:id="@+id/im_zello"
+        android:layout_marginBottom="50sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DESCARGAR ULTIMO AUDIO"
+        android:layout_gravity="right|bottom"
+        android:id="@+id/bt_escuchar"
+        style="@style/submit3"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_error_conexion"
+        android:id="@+id/im_grabar"
+        >
+
+    </ImageView>
+
+
+
+
+
+</FrameLayout>

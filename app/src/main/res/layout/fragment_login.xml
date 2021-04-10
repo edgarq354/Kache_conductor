@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.elisoft.kache_conductor.animacion.login_inicio.login.login.SignUpFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="25sp"
+        android:textColor="@color/colorTextoBoton"
+        android:text="Comienza a vivir una nueva experiencia con nosotros">
+
+    </TextView>
+
+
+</LinearLayout>

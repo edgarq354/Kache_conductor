@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".admo.Anuncio_bonificado"
+    android:orientation="vertical"
+    android:padding="15sp"
+    tools:showIn="@layout/activity_anuncio_bonificado">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1ro Cargar Publicidad"
+        android:textAllCaps="false"
+        android:layout_gravity="top|right"
+        android:id="@+id/bt_cargar"
+        style="@style/submit3"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2do Mostrar publicidad"
+        android:layout_gravity="top|right"
+        android:textAllCaps="false"
+        android:id="@+id/bt_show"
+        style="@style/submit3"
+        />
+
+</LinearLayout>

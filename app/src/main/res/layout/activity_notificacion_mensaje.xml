@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Notificacion_mensaje"
+    tools:showIn="@layout/activity_notificacion_mensaje">
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MENSAJE"
+                android:id="@+id/tv_mensaje"
+                android:textSize="20sp"
+                android:paddingTop="5sp"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimary_text"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:paddingBottom="30sp"
+                android:layout_gravity="center"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:id="@+id/bt_aceptar"
+                style="@style/submit2"
+                android:padding="0sp"
+                android:layout_gravity="bottom"
+                android:layout_margin="0sp"
+                />
+
+</FrameLayout>

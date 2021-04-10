@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+
+    <TextView
+        android:id="@+id/tv_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorPrimary_text"
+        android:text="Carlo Estrada Solano" />
+
+    <TextView
+        android:id="@+id/tv_placa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@id/tv_nombre"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorPrimary_text"
+        android:text="Placas: SX5487" />
+
+    <TextView
+        android:id="@+id/tv_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorPrimary_text"
+        android:text="Estado: Activo" />
+
+</LinearLayout>

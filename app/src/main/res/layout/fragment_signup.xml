@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.elisoft.kache_conductor.animacion.login_inicio.login.login.SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_usuario"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="92dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="@string/email"
+            android:inputType="text"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:textColor="@color/colorTextoBoton"
+            android:textColorHint="@color/colorTextoBoton" />
+
+        <EditText
+            android:id="@+id/et_contrasenia"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:textColor="@color/colorTextoBoton"
+            android:textColorHint="@color/colorTextoBoton" />
+
+
+    </LinearLayout>
+</FrameLayout>

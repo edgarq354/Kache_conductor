@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/perfil"
+            android:title="PERFIL"
+            android:icon="@mipmap/ic_nombre"/>
+        <item
+            android:id="@+id/historial"
+            android:title="HISTORIAL"
+            android:icon="@mipmap/ic_historial"/>
+        <item
+            android:id="@+id/it_reservas"
+            android:icon="@mipmap/ic_fecha"
+            android:title="RESERVAS"
+            android:visible="false"/>
+        <item
+            android:id="@+id/it_solicitudes"
+            android:title="SOLICITUDES"
+            android:icon="@mipmap/ic_marker_persona"/>
+        <item
+            android:id="@+id/notificacion"
+            android:title="NOTIFICACION"
+            android:icon="@mipmap/ic_mensaje"/>
+        <item
+            android:id="@+id/id_videos_tutoriales"
+            android:icon="@mipmap/ic_video"
+            android:title="VIDEOS"
+            android:visible="false"
+            />
+        <item
+            android:id="@+id/it_configuracion"
+            android:icon="@mipmap/ic_configuracion_negro"
+            android:title="CONFIGURACION"
+            />
+
+        <item
+            android:id="@+id/it_menu_publicidad"
+            android:icon="@mipmap/ic_video"
+            android:title="RECARGAR CREDITOS"
+            android:visible="true"/>
+        <item
+            android:id="@+id/cerrar_sesion"
+            android:title="CERRAR SESIÓN"
+            android:icon="@mipmap/ic_cerrar_sesion"/>
+        <item
+            android:id="@+id/it_chat"
+            android:icon="@mipmap/ic_cerrar_sesion"
+            android:visible="false"
+            android:title="Chat" />
+    </group>
+
+    <item android:title="COMUNICATE CON LA CENTRAL">
+        <menu>
+            <item
+                android:id="@+id/it_empresa"
+                android:icon="@mipmap/ic_empresa"
+                android:title="Empresa"
+                android:visible="false"/>
+            <item
+                android:id="@+id/it_zello"
+                android:icon="@mipmap/ic_zello"
+                android:title="Zello"
+                android:visible="false"/>
+            <item
+                android:id="@+id/it_canal"
+                android:icon="@mipmap/ic_zello"
+                android:title="CANAL-HANDY"
+                android:visible="false"/>
+        </menu>
+    </item>
+
+</menu>

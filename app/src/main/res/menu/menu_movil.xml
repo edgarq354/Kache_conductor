@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/llegare_en_5"
+        android:orderInCategory="100"
+        android:title="Llegare en 5 minutos"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/estoy_en_camino"
+        android:orderInCategory="100"
+        android:title="Estoy en camino por favor no cancele"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/direcion_incorrecta"
+        android:orderInCategory="100"
+        android:title="Direccion incorrecta LLAMEME"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/llegue"
+        android:orderInCategory="100"
+        android:title="Su Taxi esta en su puerta."
+        app:showAsAction="never" />
+    </group>
+    <item android:title="COMUNICATE CON EL CLIENTE"
+        >
+        <menu>
+            <item
+                android:id="@+id/it_llamada_usuario"
+                android:icon="@mipmap/ic_celular"
+                android:title="LLAMADA" />
+            <item
+                android:id="@+id/it_mensaje_usuario"
+                android:icon="@mipmap/ic_mensaje"
+                android:title="MENSAJE" />
+
+            <item
+                android:id="@+id/it_whatsapp_usuario"
+                android:icon="@mipmap/ic_whatsapp"
+                android:title="WHATSAPP" />
+            <item
+                android:id="@+id/it_skype_usuario"
+                android:icon="@mipmap/ic_skype"
+                android:title="SKYPE" />
+
+        </menu>
+    </item>
+</menu>
