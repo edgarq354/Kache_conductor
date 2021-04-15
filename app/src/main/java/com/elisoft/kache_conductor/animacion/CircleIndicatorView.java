@@ -6,7 +6,7 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 
 import androidx.annotation.ColorRes;
 import androidx.core.content.ContextCompat;

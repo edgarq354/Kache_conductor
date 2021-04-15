@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.widget.Toast;
 
 import com.elisoft.kache_conductor.Constants;
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.elisoft.kache_conductor.SqLite.AdminSQLiteOpenHelper;
 
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;

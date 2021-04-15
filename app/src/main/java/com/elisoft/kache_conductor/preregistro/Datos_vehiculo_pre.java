@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.elisoft.kache_conductor.Suceso;
 
 import org.json.JSONException;

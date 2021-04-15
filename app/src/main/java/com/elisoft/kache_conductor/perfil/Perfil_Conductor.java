@@ -39,7 +39,7 @@ import android.widget.Toast;
 
 import com.elisoft.kache_conductor.servicio.Servicio_descargar_imagen_perfil;
 import com.elisoft.kache_conductor.Modificar_contrasenia;
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.elisoft.kache_conductor.Suceso;
 
 import org.json.JSONException;

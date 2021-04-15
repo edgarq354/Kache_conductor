@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;

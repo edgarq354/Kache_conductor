@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.elisoft.kache_conductor.Suceso;
 import java.util.ArrayList;
 import java.util.List;

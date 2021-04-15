@@ -58,7 +58,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.elisoft.kache_conductor.SqLite.AdminSQLiteOpenHelper;
 import com.elisoft.kache_conductor.notificaciones.SharedPrefManager;
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.elisoft.kache_conductor.Suceso;
 import com.github.nkzawa.emitter.Emitter;
 import com.github.nkzawa.socketio.client.IO;

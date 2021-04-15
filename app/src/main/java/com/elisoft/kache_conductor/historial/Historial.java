@@ -15,7 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.elisoft.kache_conductor.SqLite.AdminSQLiteOpenHelper;
 import com.elisoft.kache_conductor.Suceso;
 import com.google.android.material.tabs.TabLayout;

@@ -10,7 +10,7 @@ import android.os.SystemClock;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.elisoft.kache_conductor.Suceso;
 
 import org.json.JSONArray;

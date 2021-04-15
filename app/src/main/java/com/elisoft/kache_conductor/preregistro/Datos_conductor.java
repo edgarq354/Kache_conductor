@@ -13,7 +13,7 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 
 import com.elisoft.kache_conductor.notificaciones.SharedPrefManager;
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.elisoft.kache_conductor.Suceso;
 
 import org.json.JSONArray;

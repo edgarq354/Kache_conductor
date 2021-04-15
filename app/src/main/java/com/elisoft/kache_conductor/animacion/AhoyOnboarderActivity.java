@@ -19,7 +19,7 @@ import android.widget.TextView;
 import com.elisoft.kache_conductor.animacion.utils.ShadowTransformer;
 import com.elisoft.kache_conductor.animacion.views.CircleIndicatorView;
 import com.elisoft.kache_conductor.animacion.views.FlowingGradientClass;
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 
 import java.util.List;
 

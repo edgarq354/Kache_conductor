@@ -18,7 +18,7 @@ import com.elisoft.kache_conductor.Constants;
 import com.elisoft.kache_conductor.Menu_taxi;
 import com.elisoft.kache_conductor.Notificacion_mensaje;
 import com.elisoft.kache_conductor.Notificacion_pedido_cancelado;
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.elisoft.kache_conductor.SqLite.AdminSQLiteOpenHelper;
 import com.elisoft.kache_conductor.chat.Chat;
 import com.elisoft.kache_conductor.chat.Servicio_mensaje_recibido;

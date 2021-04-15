@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 import com.elisoft.kache_conductor.animacion.login_inicio.login.InicioAnimacion;
 import com.elisoft.kache_conductor.Menu_taxi;
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 
 import java.util.ArrayList;
 import java.util.List;

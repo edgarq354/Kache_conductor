@@ -9,7 +9,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 

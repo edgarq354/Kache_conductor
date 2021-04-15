@@ -22,7 +22,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.elisoft.kache_conductor.SqLite.AdminSQLiteOpenHelper;
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 

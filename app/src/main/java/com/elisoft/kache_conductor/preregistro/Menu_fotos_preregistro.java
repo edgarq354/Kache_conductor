@@ -12,7 +12,7 @@ import android.widget.Button;
 
 import com.elisoft.kache_conductor.notificaciones.SharedPrefManager;
 import com.elisoft.kache_conductor.Menu_taxi;
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.elisoft.kache_conductor.Suceso;
 
 import org.json.JSONArray;

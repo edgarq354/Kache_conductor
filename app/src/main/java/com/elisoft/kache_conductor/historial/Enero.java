@@ -15,7 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.elisoft.kache_conductor.pedido_ya.Detalle_delivery_historial;
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.elisoft.kache_conductor.carreras.Carreras;
 
 import java.util.ArrayList;

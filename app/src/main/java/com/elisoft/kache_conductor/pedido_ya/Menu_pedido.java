@@ -107,7 +107,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.elisoft.valle_grande_conductor.R;
+import com.elisoft.kache_conductor.R;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 
@@ -3844,7 +3844,7 @@ public class Menu_pedido extends AppCompatActivity
             jsonParam.put("id_conductor",perfil.getString("ci","") );
             jsonParam.put("id_vehiculo",perfil.getString("placa",""));
             jsonParam.put("token", token);
-            String url=getString(R.string.servidor) + "frm_version.php?opcion=valle_grande_conductor";
+            String url=getString(R.string.servidor) + "frm_version.php?opcion=kache_conductor";
             if (queue == null) {
                 queue = Volley.newRequestQueue(this);
                 Log.e("volley","Setting a new request queue");
@@ -3924,7 +3924,7 @@ public class Menu_pedido extends AppCompatActivity
             dialogo1.setCancelable(false);
             dialogo1.setPositiveButton("ACTULIZAR", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialogo1, int id) {
-                    Uri uri = Uri.parse("https://play.google.com/store/apps/details?id=com.elisoft.valle_grande_conductor&hl=es");
+                    Uri uri = Uri.parse("https://play.google.com/store/apps/details?id=com.elisoft.kache_conductor&hl=es");
                     Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                     startActivity(intent);
                 }
