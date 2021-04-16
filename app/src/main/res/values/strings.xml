@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Conductor Kache</string>
+    <string name="app_name">C. Kache</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
@@ -74,7 +74,7 @@ El permiso de ubicación es necesario para mostrar su ubicación actual, ¿le gu
     <string name="version_sql">8</string>
     <string name="sonido">sonido</string>
     <string name="nombre_sql">kache_conductor</string>
-    <string name="nombre_carpeta">Conductor Kache</string>
+    <string name="nombre_carpeta">C. Kache</string>
     <string name="correo">edgarq354@gmail.com</string>
     <string name="direccion">Ciudad de Montero, Barrio Municipal calle # 12.</string>
     <string name="title_activity_llamar_usuario">Comunicate con el pasajero</string>

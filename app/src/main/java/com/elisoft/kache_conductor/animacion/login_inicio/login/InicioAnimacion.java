@@ -181,7 +181,7 @@ public class InicioAnimacion extends AppCompatActivity {
             SharedPrefManager.getInstance(this).guardarToken();
 
             if (token != null || token == "") {
-
+/*
                 TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
                 if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                     imei = Settings.Secure.getString(
@@ -200,6 +200,9 @@ public class InicioAnimacion extends AppCompatActivity {
                         servicio_iniciar_sesion(getString(R.string.servidor) + "frmTaxi.php?opcion=iniciar_sesion", login.getString("usuario", "").trim(), login.getString("contrasenia", "").trim(), token, imei);
                     }
                 }
+*/
+                SharedPreferences login = getSharedPreferences("login", MODE_PRIVATE);
+                servicio_iniciar_sesion(getString(R.string.servidor) + "frmTaxi.php?opcion=iniciar_sesion", login.getString("usuario", "").trim(), login.getString("contrasenia", "").trim(), token, imei);
 
 
 

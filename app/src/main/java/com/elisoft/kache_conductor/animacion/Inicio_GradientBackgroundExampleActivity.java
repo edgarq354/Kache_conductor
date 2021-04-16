@@ -27,7 +27,7 @@ public class Inicio_GradientBackgroundExampleActivity extends AhoyOnboarderActiv
             finish();
         }
 
-        AhoyOnboarderCard ahoyOnboarderCard1 = new AhoyOnboarderCard("Bienvenido a Gougo Free", "Disfruta conduciendo con nosotros y genera buenos ingresos por ello.", R.drawable.onboarding1);
+        AhoyOnboarderCard ahoyOnboarderCard1 = new AhoyOnboarderCard("Bienvenido a Kache", "Disfruta conduciendo con nosotros y genera buenos ingresos por ello.", R.drawable.onboarding1);
         AhoyOnboarderCard ahoyOnboarderCard2 = new AhoyOnboarderCard("Tu Personalidad", "Tu personalidad hara del viaje más placentero, trata de ser amable y cortes recuerda que una buena conversación hace el viaje mas corto y divertido.", R.drawable.onboarding2);
         AhoyOnboarderCard ahoyOnboarderCard3 = new AhoyOnboarderCard("Tu Herramienta", "Tu vehículo es tu herramienta de trabajo mantenlo en buen estado, eso te permitira tener mejor puntuación y te dara ventaja a la hora de aceptar viajes.", R.drawable.onboarding3);
         AhoyOnboarderCard ahoyOnboarderCard4 = new AhoyOnboarderCard("Tu guía", "Tu teléfono es tu guía mediante las ayudas de gps y red de datos te ayuda a dar con tu pasajero de la forma mas rapida y segura.", R.drawable.onboarding4);
