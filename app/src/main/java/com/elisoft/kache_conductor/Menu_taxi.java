@@ -84,12 +84,6 @@ import com.elisoft.kache_conductor.servicio.Servicio_descargar_imagen_perfil;
 import com.elisoft.kache_conductor.solicitudes.CSolicitud;
 import com.elisoft.kache_conductor.solicitudes.Items_solicitud;
 import com.elisoft.kache_conductor.video_tutorial.Menu_video;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.reward.RewardItem;
-import com.google.android.gms.ads.reward.RewardedVideoAd;
-import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
@@ -171,7 +165,6 @@ public class Menu_taxi extends AppCompatActivity
         GoogleApiClient.ConnectionCallbacks,
         LocationListener   {
 //solo para la publicidad
-private RewardedVideoAd mRewardedVideoAd;
     private  String AD_UNIT_ID ; //My code
 //fin publicidad
     /*
@@ -264,7 +257,6 @@ private RewardedVideoAd mRewardedVideoAd;
     int version=0;
     int cantidad_conexion=0;
 
-    private AdView mAdView;
 
     ImageView im_grabar;
     MediaPlayer mp;
@@ -743,13 +735,6 @@ catch (Exception e){}
 // fin de la obtenecion de ubicacion....
 
 
-
-        MobileAds.initialize(this, getString(R.string.id_AdMob_aplicacion));
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
-
-
 //AUDIO
         sRecordedFileName = getCacheDir().getAbsolutePath() + "/audiorecordtest.3gp";
         im_grabar.setOnTouchListener(new View.OnTouchListener() {
@@ -787,75 +772,6 @@ catch (Exception e){}
 
 
 
-
-        //PUBLICIDAD DE VIDEOS
-
-        //Anuncio probar video
-        mRewardedVideoAd = MobileAds.getRewardedVideoAdInstance(this);
-        mRewardedVideoAd.setRewardedVideoAdListener(new RewardedVideoAdListener()
-        {
-
-            @Override
-            public void onRewardedVideoAdLoaded()
-            {
-              //  Toast.makeText(Menu_taxi.this, "onRewardedVideoAdLoaded", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onRewardedVideoAdOpened()
-            {
-               // Toast.makeText(Menu_taxi.this, "onRewardedVideoAdOpened", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onRewardedVideoStarted()
-            {
-               // Toast.makeText(Menu_taxi.this, "onRewardedVideoStarted", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onRewardedVideoAdClosed()
-            {
-              //  Toast.makeText(Menu_taxi.this, "onRewardedVideoAdClosed", Toast.LENGTH_SHORT).show();
-                // Preload the next video ad.
-                loadRewardedVideoAd();
-            }
-
-            @Override
-            public void onRewarded(RewardItem rewardItem)
-            {
-                Toast.makeText(Menu_taxi.this,String.format(Locale.getDefault(),"se agrego %d %s!", rewardItem.getAmount(), rewardItem.getType()),Toast.LENGTH_SHORT).show();
-                int credito = 0;
-                try{
-                    credito=Integer.parseInt(String.format(Locale.getDefault(),"%d", rewardItem.getAmount(), rewardItem.getType()));
-                }catch (Exception e){
-                    credito=0;
-                }
-
-                SharedPreferences prefe = getSharedPreferences("perfil_conductor", Context.MODE_PRIVATE);
-                String id_conductor=prefe.getString("ci", "");
-
-                servicio_volley_set_credito( id_conductor, String.valueOf(credito));
-
-            }
-
-            @Override
-            public void onRewardedVideoAdLeftApplication()
-            {
-                Toast.makeText(Menu_taxi.this, "onRewardedVideoAdLeftApplication", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onRewardedVideoAdFailedToLoad(int i)
-            {
-                Toast.makeText(Menu_taxi.this, "onRewardedVideoAdFailedToLoad", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onRewardedVideoCompleted() {
-
-            }
-        });
 
     }
 
@@ -4993,7 +4909,7 @@ catch (Exception e){}
             dialogo1.setCancelable(false);
             dialogo1.setPositiveButton("ACTULIZAR", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialogo1, int id) {
-                    Uri uri = Uri.parse("https://play.google.com/store/apps/details?id=com.elisoft.valle_grande_conductor&hl=es");
+                    Uri uri = Uri.parse("https://play.google.com/store/apps/details?id=com.elisoft.kache_conductor&hl=es");
                     Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                     startActivity(intent);
                 }
@@ -5769,16 +5685,12 @@ public void get_credito(){
     }
 
     private void loadRewardedVideoAd() {
-        if (!mRewardedVideoAd.isLoaded()) {
-            mRewardedVideoAd.loadAd(AD_UNIT_ID, new AdRequest.Builder().build());
-        }
+
     }
 
     private void showRewardedVideo() {
 
-        if (mRewardedVideoAd.isLoaded()) {
-            mRewardedVideoAd.show();
-        }
+
     }
 
     private void servicio_volley_set_credito(String ci, String credito) {

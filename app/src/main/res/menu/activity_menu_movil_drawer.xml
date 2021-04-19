@@ -18,6 +18,7 @@
         <item
             android:id="@+id/it_solicitudes"
             android:title="SOLICITUDES"
+            android:visible="false"
             android:icon="@mipmap/ic_marker_persona"/>
         <item
             android:id="@+id/notificacion"
@@ -35,11 +36,12 @@
             android:title="CONFIGURACION"
             />
 
+
         <item
             android:id="@+id/it_menu_publicidad"
             android:icon="@mipmap/ic_video"
             android:title="RECARGAR CREDITOS"
-            android:visible="true"/>
+            android:visible="false"/>
         <item
             android:id="@+id/cerrar_sesion"
             android:title="CERRAR SESIÓN"

@@ -19,11 +19,6 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.elisoft.kache_conductor.Suceso;
 import com.elisoft.kache_conductor.R;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.reward.RewardItem;
-import com.google.android.gms.ads.reward.RewardedVideoAd;
-import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -41,7 +36,6 @@ public class Anuncio_bonificado extends AppCompatActivity {
 
     ProgressDialog pDialog;
     Suceso suceso;
-    private RewardedVideoAd mRewardedVideoAd;
     private  String AD_UNIT_ID ; //My code
 
     Button bt_show,bt_cargar;
@@ -52,80 +46,11 @@ public class Anuncio_bonificado extends AppCompatActivity {
         // Get the view from singleitemview.xml
         setContentView(R.layout.activity_anuncio_bonificado);
 
-        MobileAds.initialize(this, getString(R.string.id_AdMob_aplicacion));
         AD_UNIT_ID=getString(R.string.bonificado_ad_unit_id);
 
         bt_show = (Button) findViewById(R.id.bt_show);
         bt_cargar = (Button) findViewById(R.id.bt_cargar);
 
-        //Anuncio probar video
-        mRewardedVideoAd = MobileAds.getRewardedVideoAdInstance(this);
-        mRewardedVideoAd.setRewardedVideoAdListener(new RewardedVideoAdListener()
-
-
-        {
-
-            @Override
-            public void onRewardedVideoAdLoaded()
-            {
-                Toast.makeText(Anuncio_bonificado.this, "Video Cargado", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onRewardedVideoAdOpened()
-            {
-                Toast.makeText(Anuncio_bonificado.this, "Abriendo Video", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onRewardedVideoStarted()
-            {
-                Toast.makeText(Anuncio_bonificado.this, "Reproduciendo...", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onRewardedVideoAdClosed()
-            {
-                Toast.makeText(Anuncio_bonificado.this, "Cerrando...", Toast.LENGTH_SHORT).show();
-                // Preload the next video ad.
-                loadRewardedVideoAd();
-            }
-
-            @Override
-            public void onRewarded(RewardItem rewardItem)
-            {
-                Toast.makeText(Anuncio_bonificado.this,String.format(Locale.getDefault(),"Mira el video completo!", rewardItem.getAmount(), rewardItem.getType()),Toast.LENGTH_SHORT).show();
-                int credito = 0;
-                try{
-                    credito=Integer.parseInt(String.format(Locale.getDefault(),"%d", rewardItem.getAmount(), rewardItem.getType()));
-                }catch (Exception e){
-                    credito=0;
-                }
-
-                SharedPreferences prefe = getSharedPreferences("perfil_conductor", Context.MODE_PRIVATE);
-                String id_conductor=prefe.getString("ci", "");
-
-                servicio_volley_set_credito( id_conductor, String.valueOf(credito));
-
-            }
-
-            @Override
-            public void onRewardedVideoAdLeftApplication()
-            {
-                Toast.makeText(Anuncio_bonificado.this, "onRewardedVideoAdLeftApplication", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onRewardedVideoAdFailedToLoad(int i)
-            {
-                Toast.makeText(Anuncio_bonificado.this, "Regresa mas tarde...", Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onRewardedVideoCompleted() {
-
-            }
-        });
 
         bt_show.setOnClickListener(new View.OnClickListener()
     {
@@ -153,16 +78,11 @@ public class Anuncio_bonificado extends AppCompatActivity {
     }
 
     private void loadRewardedVideoAd() {
-        if (!mRewardedVideoAd.isLoaded()) {
-            mRewardedVideoAd.loadAd(AD_UNIT_ID, new AdRequest.Builder().build());
-        }
+
     }
 
     private void showRewardedVideo() {
 
-        if (mRewardedVideoAd.isLoaded()) {
-            mRewardedVideoAd.show();
-        }
     }
 
 

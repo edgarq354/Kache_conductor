@@ -99,7 +99,7 @@ dependencies {
     implementation files('libs/zello-sdk.jar')
 
     //Ads
-    implementation 'com.google.android.gms:play-services-ads:19.6.0'
+    //implementation 'com.google.android.gms:play-services-ads:19.6.0'
 
     //socket
     implementation 'com.github.nkzawa:socket.io-client:0.3.0'
