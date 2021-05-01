@@ -2612,14 +2612,14 @@ catch (Exception e){}
 
 
                 punto=new LatLng(latitud,longitud);
-                start_nimacion_pasajero();
-                /*
+               // start_nimacion_pasajero();
+
                 if(esDiurno()){
                     mMap.addPolyline(polylineOptions.width(15).color(Color.BLACK));
                 }else{
                     mMap.addPolyline(polylineOptions.width(15).color(getResources().getColor(R.color.colorPrimary_light)));
                 }
-                */
+
 
 
                 //agregaranimacion al mover la camara...
